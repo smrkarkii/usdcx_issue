@@ -33,7 +33,7 @@ cargo install --path=. --features test_network
 
 ## Steps to Reproduce
 
-1. Deploy contracts:
+1. Compile using : ```dokojs compile``` and then Deploy contracts:
 
 ```bash
 npm run test --runInBand -- test/1_deploy_contracts.test.ts
