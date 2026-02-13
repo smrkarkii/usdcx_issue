@@ -33,7 +33,8 @@ cargo install --path=. --features test_network
 
 ## Steps to Reproduce
 
-1. Compile using : ```dokojs compile``` and then Deploy contracts:
+1. Install dokojs cli: ```npm i -g @doko-js/cli@1.1.1-beta```
+2. Compile using : ```dokojs compile``` and then Deploy contracts:
 
 ```bash
 npm run test --runInBand -- test/1_deploy_contracts.test.ts
