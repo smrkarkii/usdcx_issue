@@ -34,25 +34,25 @@ cargo install --path=. --features test_network
 ## Steps to Reproduce
 
 1. Install dokojs cli: ```npm i -g @doko-js/cli@1.1.1-beta```
-2. Compile using : ```dokojs compile``` and then Deploy contracts:
-
-```bash
-npm run test --runInBand -- test/1_deploy_contracts.test.ts
-```
+2. Compile using : ```dokojs compile``` 
 3. Update this file: artifacts/js/pondo_protocol.ts 
     Add the given code to this file:
     ```bash
    import { validator_state } from "./types/delegator1";
    import { getvalidator_state } from "./leo2js/delegator1";
     ```
+4.Deploy contracts:
 
-4. Initialize contract:
+```bash
+npm run test --runInBand -- test/1_deploy_contracts.test.ts
+```
+5. Initialize contract:
 
 ```bash
 npm run test --runInBand -- test/2_contract_init.test.ts
 ```
 
-5. Run private-to-public transfer test:
+6. Run private-to-public transfer test:
 
 ```bash
 npm run test --runInBand -- test/transfer_private_to_public.test.ts
